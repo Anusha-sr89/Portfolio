@@ -1,0 +1,210 @@
+
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Portfolio Website | Code4education </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.3/xlsx.full.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+  <!-- Move to up bottom -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  
+  <!-- navigation menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Portfolio.</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+      <div class="media-icons">
+        <a href="https://www.linkedin.com/in/anusha-srivastava-22a8a5229/"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto: anushasrivastva8957@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Anusha Srivastava</div>
+        <div class="text-three">Software Developer</div>
+        <div class="text-four">From India</div>
+      </div>
+      <div class="button" >
+        <a class="btn line-btn-dark btn-icon btn-radius" href="mailto: anushasrivastva8957@gmail.com"title="" >Hire Me</a>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img decoding="async" src="images/work2.jpg" alt="Portfolio">
+        </div>
+        <div class="right">
+          <div class="topic">Career Objective :
+          </div>
+          <p> Seeking a position as (the job role being offered) that will enhance my skills and offer security while aiding my professional growth and helping me contribute to the organization’s growth.</p>
+          
+            <div class="button">
+              <a class="btn line-btn-dark btn-icon btn-radius" href="images/AnushaSrivastava_SoftwareDeveloper (1).pdf" title=""<i class="fa fa-download" download></i> Download Resume</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Skill Section Start -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skills-details">
+        <div class="text">
+          <div class="topic">Skills Reflects My Knowledge</div>
+          <p> </p>
+          <div class="experience">
+            <div class="num">4</div>
+            <div class="exp">Months Of <br> Experience</div>
+          </div>
+        </div>
+        
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <div class="per">70%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Javascript</div>
+            <div class="per">60%</div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Services Section Start -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>My Services</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="topic">Web Development</div>
+          <p>I have developed some websites using HTML,CSS and Javascript</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          
+          <div class="topic">Digital Marketing</div>
+          <p>I am enhancing my knowledge in this field and have earned some of the certificates as well</p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fab fa-wordpress"></i>
+          </div>
+          <div class="topic">Application Developer</div>
+          <p>Multiple Apps have been created by me and have worked with fragments and activites </p>
+        </div>
+        
+    </div>
+  </section>
+
+  <!-- Contact Me Section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="topic">Have Any Project?</div>
+        <p>If you like my work feel free to contact me </p>
+        <div class="button">
+          <button onclick="showForm()">Let's Chat</button>
+          <div id="formContainer" style="display: none;">
+            
+          <form id="myForm" >
+           
+            <input type="text"  placeholder="Name" id="name" name="name" required><br><br>
+            
+            
+            <input type="email" id="email" placeholder="Email" name="email" required><br><br>
+            
+            
+            <textarea id="message" name="message"placeholder="Message" required></textarea><br><br>
+            
+            <input type="submit" id="Submit"   value="Submit">
+        </form>
+        
+          
+        </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+ 
+  
+
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">Anusha Srivastava</a> | © 2023 All Rights Reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    function showForm() {
+        var formContainer = document.getElementById("formContainer");
+        formContainer.style.display = "block";
+    }
+
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting (for demonstration purposes)
+        // You can add code here to handle the form submission
+        // For example, you can collect the form data and perform some action.
+        alert("Form submitted!");
+    });
+
+    
+
+</script>
+
+   
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
+
+
